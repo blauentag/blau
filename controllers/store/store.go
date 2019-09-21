@@ -7,9 +7,9 @@ import (
 
 	coreStore "github.com/DanielRenne/GoCore/core/store"
 	"github.com/blauentag/blau/br"
-	"github.com/blauentag/blau/sessionFunctions"
 	"github.com/blauentag/blau/constants"
 	"github.com/blauentag/blau/controllers"
+	"github.com/blauentag/blau/sessionFunctions"
 	"github.com/blauentag/blau/viewModel"
 )
 

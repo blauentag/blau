@@ -8,9 +8,8 @@ import (
 
 	"github.com/DanielRenne/GoCore/core/app"
 	"github.com/DanielRenne/GoCore/core/store"
-	"github.com/blauentag/blau/sessionFunctions"
 	"github.com/DanielRenne/GoCore/core/utils"
-
+	"github.com/blauentag/blau/sessionFunctions"
 )
 
 const (

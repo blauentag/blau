@@ -241,7 +241,7 @@ func DeleteRoleRow(context session_functions.RequestContext, vm *viewModel.RoleM
 	if err == nil {
 		vm.Role.AccountId = acct.Id.Hex()
 	}
-	vm.Role.CanDelete = true 
+	vm.Role.CanDelete = true
 	if model.AccountRoles.Query().Filter(model.Q(model.FIELD_ACCOUNTROLE_ROLEID, vm.Role.Id.Hex())).TotalRows() > 0 {
 		return session_functions.ServerResponseToStruct(PARAM_FAILED, context, PARAM_REDIRECT_NONE, "CannotDelete", PARAM_SNACKBAR_TYPE_ERROR, err, PARAM_TRANSACTION_ID_NONE, vm)
 	}

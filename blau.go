@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -16,11 +15,11 @@ import (
 	"github.com/DanielRenne/GoCore/core/app"
 	"github.com/DanielRenne/GoCore/core/ginServer"
 	"github.com/DanielRenne/GoCore/core/logger"
-	_ "github.com/blauentag/blau/controllerRegistry"
-	_ "github.com/blauentag/blau/gitWebHooks"
 	"github.com/blauentag/blau/br"
+	_ "github.com/blauentag/blau/controllerRegistry"
 	"github.com/blauentag/blau/controllers"
 	"github.com/blauentag/blau/cron"
+	_ "github.com/blauentag/blau/gitWebHooks"
 	_ "github.com/blauentag/blau/models/v1/model"
 	"github.com/blauentag/blau/sessionFunctions"
 	"github.com/blauentag/blau/settings"
