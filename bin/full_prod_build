@@ -1,0 +1,9 @@
+bash $GOPATH/src/github.com/blauentag/blau/bin/kill_all
+bash $GOPATH/src/github.com/blauentag/blau/bin/build_full
+cd $GOPATH
+whoami=$(whoami)
+if [[ "$whoami" == "root" ]]; then
+    blau
+else
+    sudo blau
+fi

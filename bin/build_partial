@@ -1,0 +1,3 @@
+cd $GOPATH
+go build src/github.com/blauentag/blau/blau.go
+go install github.com/blauentag/blau

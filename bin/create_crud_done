@@ -1,0 +1,4 @@
+bash $GOPATH/src/github.com/blauentag/blau/bin/build
+echo -e "${GREEN}Formatting golang!${NC}"
+bash $GOPATH/src/github.com/blauentag/blau/bin/format
+bash $GOPATH/src/github.com/blauentag/blau/bin/start_gocore

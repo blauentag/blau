@@ -1,0 +1,13 @@
+bash $GOPATH/src/github.com/blauentag/blau/bin/kill_servers
+go install github.com/blauentag/blau
+cd $GOPATH/src/github.com/blauentag/blau/web/app/javascript
+bash build.sh
+cd $GOPATH
+go build src/github.com/blauentag/blau/blau.go
+cd $GOPATH
+whoami=$(whoami)
+if [[ "$whoami" == "root" ]]; then
+    blau
+else
+    sudo blau
+fi

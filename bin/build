@@ -1,0 +1,11 @@
+go install github.com/blauentag/blau
+cd $GOPATH/src/github.com/blauentag/blau/web/app/javascript
+bash build-gopher.sh
+cd $GOPATH/
+go build src/github.com/blauentag/blau/blau.go
+whoami=$(whoami)
+if [[ "$whoami" == "root" ]]; then
+    blau
+else
+    sudo blau
+fi
